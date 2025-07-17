@@ -4,6 +4,7 @@ export const Produtos = styled.ul`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 24px;
+  padding-left: 0;
 
   @media (max-width: 1024px) {
     grid-template-columns: 1fr 1fr;

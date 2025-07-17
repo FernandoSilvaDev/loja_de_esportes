@@ -7,6 +7,7 @@ import { RootReducer } from './store'
 import { GlobalStyle } from './styles'
 import { Provider } from 'react-redux'
 import { store } from './store'
+import Rodape from './components/Rodape'
 
 export type Produto = {
   id: number
@@ -26,6 +27,7 @@ function App() {
       <div className="container">
         <Header />
         <Produtos favoritos={favoritos} />
+        <Rodape />
       </div>
     </Provider>
   )

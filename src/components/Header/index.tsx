@@ -1,4 +1,5 @@
 import { useSelector } from 'react-redux'
+import Carousel from 'react-bootstrap/Carousel'
 
 import * as S from './styles'
 
@@ -19,16 +20,30 @@ const Header = () => {
   }, 0)
 
   return (
-    <S.Header>
-      <h1>EBAC Sports</h1>
-      <div>
-        <span>{favoritos.length} favoritos</span>
-        <img src={cesta} />
-        <span>
-          {itens.length} itens, valor total: {paraReal(valorTotal)}
-        </span>
-      </div>
-    </S.Header>
+    <div>
+      <Carousel interval={3000} fade>
+        <Carousel.Item>
+          <img className="d-block w-100" src="/img/Desk.jpg" alt="Slide 2" />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="/img/desk_nike.png"
+            alt="Slide 3"
+          />
+        </Carousel.Item>
+      </Carousel>
+      <S.Header>
+        <h1>Loja de Sports</h1>
+        <div>
+          <span>{favoritos.length} favoritos</span>
+          <img src={cesta} />
+          <span>
+            {itens.length} itens, valor total: {paraReal(valorTotal)}
+          </span>
+        </div>
+      </S.Header>
+    </div>
   )
 }
 

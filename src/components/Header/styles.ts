@@ -7,7 +7,7 @@ export const Header = styled.header`
     ${cores.corPrincipal},
     ${cores.corSecundaria}
   );
-  margin: 80px 0;
+  margin: 20px 0;
   padding: 16px 24px;
   display: flex;
   border-radius: 6px;
@@ -18,6 +18,7 @@ export const Header = styled.header`
     flex: 1;
     font-style: italic;
     color: ${cores.corFundo};
+    margin-bottom: 0;
   }
 
   div {
