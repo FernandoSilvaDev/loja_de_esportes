@@ -34,7 +34,7 @@ const Header = () => {
         </Carousel.Item>
       </Carousel>
       <S.Header>
-        <h1>Loja de Sports</h1>
+        <h1>Loja de Esportes</h1>
         <div>
           <span>{favoritos.length} favoritos</span>
           <img src={cesta} />
